@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>innerHTML Example</title>
+</head>
+<body>
+
+  <div id="myDiv">
+    <p>This is the original content.</p>
+  </div>
+
+  <button id="updateButton">Update Content</button>
+
+  <script>
+    function updateContent(selector, newContent) {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach(element => {
+        element.innerHTML = newContent;
+      });
+    }
+
+    const updateButton = document.getElementById('updateButton');
+    updateButton.addEventListener('click', () => {
+      updateContent('#myDiv', '<h1>New heading</h1><p>New paragraph.</p>');
+    });
+  </script>
+
+</body>
+</html>
