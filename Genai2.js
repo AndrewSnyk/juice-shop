@@ -4,4 +4,4 @@ function updateContent(selector, newContent) {
       element.innerHTML = newContent;
     });
   }
-  
+  //comments
