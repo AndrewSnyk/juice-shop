@@ -30,3 +30,4 @@ searchForm.addEventListener("submit", async (event) => {
 
 /* The following code is for the logout button. */
 /* Logout button functionality */
+//me putting in comments for rescan
